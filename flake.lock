@@ -56,11 +56,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1669328018,
-        "narHash": "sha256-aJRMobnNDEXKwoSZFS4hGjGU1WDNxkQ82BVKAEohOfY=",
+        "lastModified": 1669825171,
+        "narHash": "sha256-HxlZHSiRGXnWAFbIJMeujqBe2KgACYx5XDRY0EA9P+4=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "62cb5bcf93896e4dd6b4507dac7ba2e2e3abc9d7",
+        "rev": "478610aa37c8339eacabfa03f07dacf5574edd47",
         "type": "github"
       },
       "original": {
@@ -107,11 +107,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1669320964,
-        "narHash": "sha256-EBFw+ge12Pcr3qCk8If3/eMBAoQLR7ytndXZoRevUtM=",
+        "lastModified": 1669791787,
+        "narHash": "sha256-KBfoA2fOI5+wCrm7PR+j7jHqXeTkVRPQ0m5fcKchyuU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "27ccd29078f974ddbdd7edc8e38c8c8ae003c877",
+        "rev": "e76c78d20685a043d23f5f9e0ccd2203997f1fb1",
         "type": "github"
       },
       "original": {
@@ -183,11 +183,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1669330326,
-        "narHash": "sha256-8rqXsAUmHaYkfwAxDHl2b9+AZ0ge55KASVYknV909A4=",
+        "lastModified": 1669846024,
+        "narHash": "sha256-v2OOLHB2dmDSYQMqBqDY+/5P4jC8mCmWoTyENlbK3C4=",
         "owner": "lpenz",
         "repo": "tuzue",
-        "rev": "4299fc79a58150661e2e8ae5e39e837473a9d3d5",
+        "rev": "b1c9974167f2e8ff3b4dc33b6489ea0a60067653",
         "type": "github"
       },
       "original": {

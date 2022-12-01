@@ -25,6 +25,7 @@
             home.stateVersion = "22.11";
             home.username = "${user}";
             home.homeDirectory = "/home/${user}";
+
             home.packages = [
               execpermfix.packages.${system}.default
               tuzue.packages.${system}.default
@@ -36,8 +37,28 @@
               pkgs.ripgrep
               pkgs.topgrade
               pkgs.zsh
+
+              # fish:
+              pkgs.starship
+              pkgs.fishPlugins.fzf-fish
             ];
+
             programs.emacs.enable = true;
+
+            programs.fish = {
+              enable = true;
+              interactiveShellInit = ''
+                # Commands to run in interactive sessions can go here
+                set -gx EDITOR vim
+                set -gx VISUAL vim
+                fzf_configure_bindings
+                starship init fish | source
+              '';
+            };
+            xdg.configFile."starship.toml".text = ''
+              [aws]
+              disabled = true
+            '';
           }
         ];
       };
