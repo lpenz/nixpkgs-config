@@ -31,6 +31,7 @@
               tuzue.packages.${system}.default
 
               pkgs.bat
+              pkgs.direnv
               pkgs.fd
               pkgs.fzf
               pkgs.glibcLocales
@@ -53,6 +54,7 @@
                 set -gx VISUAL vim
                 fzf_configure_bindings
                 starship init fish | source
+                direnv hook fish | source
               '';
             };
             xdg.configFile."starship.toml".text = ''
