@@ -55,6 +55,14 @@
                 fzf_configure_bindings
                 starship init fish | source
                 direnv hook fish | source
+                function push-line
+                    commandline -f kill-whole-line
+                    function restore_line --on-event fish_prompt
+                        commandline -f yank
+                        functions -e restore_line
+                    end
+                end
+                bind \eq push-line
               '';
             };
             xdg.configFile."starship.toml".text = ''
